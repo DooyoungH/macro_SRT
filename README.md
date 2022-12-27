@@ -14,7 +14,7 @@ i.e.) home/Download/chromedriver
 driver.find_element_by_id('srchDvNm01').send_keys("ID Number")
 driver.find_element_by_id('hmpgPwdCphd01').send_keys("Password")
 ```
-i.e.) SRT ID numeer and Passward
+i.e.) SRT ID number and Passward
 
 and, just run SRT_macro.py
 ```
