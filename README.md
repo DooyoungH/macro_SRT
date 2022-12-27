@@ -1,6 +1,6 @@
 # macro_SRT
 
-Korea trail SRT macro file using Python script
+Korea trail SRT macro file using Python script.
 It requires selenium, chrome web driver, and etc.
 
 If you want to run the macro, you have to edit three lines of SRT_macro.py
