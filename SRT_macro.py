@@ -25,6 +25,7 @@ def open_browser():
     # options.add_argument('headless')
     options.add_argument('window-size=1920x1080')
     options.add_argument("disable-gpu")
+    #driver = webdriver.Chrome("directory of chromedriver", chrome_options=options)
     driver = webdriver.Chrome("/Users/ryumei/Downloads/chromedriver", chrome_options=options)
     return driver
 
@@ -32,8 +33,10 @@ def run():
     driver = open_browser()
     driver.get('https://etk.srail.co.kr/cmc/01/selectLoginForm.do')
     driver.implicitly_wait(15)
+    #driver.find_element_by_id('srchDvNm01').send_keys("ID Number")
     driver.find_element_by_id('srchDvNm01').send_keys("2287793934")
-    driver.find_element_by_id('hmpgPwdCphd01').send_keys("DiendS2Listen!")
+    #driver.find_element_by_id('hmpgPwdCphd01').send_keys("Password")
+    driver.find_element_by_id('hmpgPwdCphd01').send_keys("1234678")
     driver.find_element_by_xpath('//*[@id="login-form"]/fieldset/div[1]/div[1]/div[2]/div/div[2]/input').click()
     driver.implicitly_wait(4)
     sleep(0.4)
